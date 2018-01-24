@@ -1,0 +1,28 @@
+{
+  "name": "request",
+  "version": "0.1.0",
+  "description": "A tiny fetch polyfill for fun",
+  "main": "index.js",
+  "author": "Simon Petry",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simonpetry/request.git"
+  },
+  "keywords": [
+    "fetch",
+    "polyfill",
+    "XMLHttpRequest",
+    "ajax"
+  ],
+  "scripts": {
+    "build": "parcel build src/index.js --no-cache",
+    "start": "parcel ./example/index.html --no-cache"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "parcel-bundler": "^1.5.0",
+    "promise-polyfill": "^7.0.0"
+  }
+}
