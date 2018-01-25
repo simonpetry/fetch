@@ -1,5 +1,7 @@
 import 'promise-polyfill/src/polyfill'; // for IE
-import '../src/polyfill';
+// import fetch from '../src/fetch'; // locally
+// or
+import '../dist/polyfill'; // globally, also good for IE
 
 const user = fetch('https://jsonplaceholder.typicode.com/comments?postId=1',
   { 

@@ -1,4 +1,4 @@
-function fetch(url, options = {}) {
+export default function(url, options = {}) {
   // Response body types
   const __BLOB__ = 'blob';
   const __JSON__ = 'json';
@@ -94,7 +94,3 @@ function fetch(url, options = {}) {
     request.send(options.body);
   });
 };
-
-export default 'fetch' in window
-  ? window.fetch
-  : fetch;
